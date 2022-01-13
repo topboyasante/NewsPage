@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+/*mobile*/
+@media (max-width:450px) {
+    #hero{
+        height: 100vh;
+    }
+    #hero-text{
+        
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .news{
+        margin: 20px 0;
+    }
+    .news-box{
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 90%;
+        padding: 20px;
+        margin: auto;
+    }
+    .news-item{
+        display: flex;
+        justify-content: space-around;
+    }
+    .news-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .news-text{
+        padding-left: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Utilities*/
+.text-md{
+    font-size: medium;
+}
+.text-lg{
+    font-size: large;
+}
+.text-center{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
