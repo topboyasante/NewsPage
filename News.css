@@ -5,6 +5,57 @@
     font-family: 'Outfit', sans-serif;
     box-sizing: border-box;
 }
+/*Big Screens*/
+@media (min-width:900px) {
+    #hero{
+        height: 100vh;
+        background-color: burlywood;
+    }
+    #hero-text{
+        
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .news{
+        margin: 20px 0;
+    }
+    .news-box{
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 60vw;
+        padding: 20px;
+        margin: auto;
+        margin-left: 20px;
+    }
+    .aside-news-box{
+        border: 1px solid black;
+        border-radius: 15px;
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+    }
+    
+    .news-icon{
+        width: 90px;
+        height: 90px;
+    }
+    .display-flex{
+        display: flex;
+    }
+    .aside-box{
+        border: 1px solid black;
+        padding: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .aside-header{
+        margin-top: 10px;
+    }
+}
+
 
 /*mobile*/
 @media (max-width:450px) {
@@ -40,14 +91,52 @@
     .news-text{
         padding-left: 12px;
     }
+
+    aside{
+        display: none;
+    }
 }
 
 
+/*Tablets,Ipads,etc.*/
+@media (max-width:850px) {
+    #hero{
+        height: 100vh;
+        background-color: burlywood;
+    }
+    #hero-text{
+        
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .news{
+        margin: 20px 0;
+    }
+    .news-box{
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 90%;
+        padding: 20px;
+        margin: auto;
+    }
+    .news-item{
+        display: flex;
+        justify-content: space-around;
+    }
+    .news-icon{
+        width: 90px;
+        height: 90px;
+    }
+    .news-text{
+        padding-left: 5px;
+    }
 
-
-
-
-
+    aside{
+        display: none;
+    }
+}
 
 
 
@@ -66,8 +155,10 @@ a{
     color: black;
 }
 form{
-    margin-left: 70px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 form input{
     height: 30px;
@@ -75,6 +166,7 @@ form input{
 button{
     width: 100px;
     height: 40px;
+    margin-bottom: 10px;
 }
 .button{
     display: flex;
